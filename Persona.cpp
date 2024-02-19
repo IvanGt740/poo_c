@@ -1,13 +1,15 @@
 #include <iostream>
+
 using namespace std;
 
 class Persona{
     //Atributos de Persona = nombres,direccion,telefono
     protected : string nombres,apellidos,direccion,fecha_nacimiento;
-    int telefono;
+    			int telefono;
 
-//Metodos
-    Persona() {
+	//Constructor
+    protected :
+		Persona() {
 
     }  
         Persona (string nom,string ape, string dir,int tel, string fecha_n){
@@ -18,10 +20,10 @@ class Persona{
             fecha_nacimiento = fecha_n;    
         } 
 
-        //Metodos CRUD = crear, leer, actualizar, borrar
-        void crear();
-        void leer();
-        void actualizar();
-        void borrar();
+    //Metodos CRUD = crear, leer, actualizar, borrar
+    void crear();
+    void leer();
+    void actualizar();
+    void borrar();
 };
 

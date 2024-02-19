@@ -9,21 +9,23 @@ main(){
 	string varc,varn,varap,vardir,varfecha_n;
 	int vart;
 	
-	cout<<"Ingrese Carnet: ";
+	cout<<"Ingrese Carnet: "<<endl;
 	cin>>varc;
-	cout<<"Ingrese nombre: ";
+	cout<<"Ingrese nombre: "<<endl;
 	cin>>varn;
-	cout<<"Ingrese apellido: ";
+	cout<<"Ingrese apellido: "<<endl;
 	cin>>varap;
-	cout<<"Ingrese Direccion: ";
+	cout<<"Ingrese Direccion: "<<endl;
 	cin>>vardir;
-	cout<<"Ingrese Fecha de Nacimiento: ";
-	cin>>varfecha_n;
-	cout<<"Ingrese Telefono";
+	cout<<"Ingrese Telefono: "<<endl;
 	cin>>vart;
-	cout<<"..........................Mostrar Datos........................"endl;
-	Estduiante estudiante = Estudiante(varn,varap,vardir,vart,varfecha_n,varc);
+	cout<<"Ingrese Fecha de Nacimiento: "<<endl;
+	cin>>varfecha_n;
+	
+	cout<<"..........................Mostrar Datos........................"<<endl;
+	//Instancia de un objeto
+	Estudiante estudiante = Estudiante(varn,varap,vardir,vart,varfecha_n,varc);
 	estudiante.leer();
 	
-	
+	return 0;
 }
